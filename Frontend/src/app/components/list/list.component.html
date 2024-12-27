@@ -1,0 +1,28 @@
+<br><hr>
+<div class="container container-fluid">
+  <table class="table table-striped">
+    <thead>
+    <tr>
+      <th scope="col">Id</th>
+      <th scope="col">Description</th>
+      <th scope="col">Price</th>
+      <th scope="col">Exist</th>
+      <th>Actions</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let products of products">
+      <th scope="row">{{products.id}}</th>
+      <td>{{products.description}}</td>
+      <td>S/.{{products.price}}.00</td>
+      <td>{{products.exist}}</td>
+      <td>
+          <button type="button" class="btn btn-success btn-sm me-3" (click)="editProducts(products.id)">Editar</button>
+          <button type="button" class="btn btn-danger btn-sm me-3" (click)="deleteProducts(products.id)">Eliminar</button>
+      </td>
+    </tr>
+
+
+    </tbody>
+  </table>
+</div>

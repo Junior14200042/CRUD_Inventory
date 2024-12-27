@@ -1,0 +1,22 @@
+<div class="form-container">
+  <div class="form-box">
+    <h2 class="text-center mb-4">Register Product</h2>
+    <form >
+      <div class="form-group">
+        <label for="nombre">Description</label>
+        <input type="text" class="form-control" id="nombre" name="description" placeholder="Enter the description" [(ngModel)]="products.description">
+      </div>
+      <div class="form-group">
+        <label for="email">Price S/.</label>
+        <input type="number" class="form-control" id="email" name="price" placeholder="Enter the price" [(ngModel)]="products.price">
+      </div>
+      <div class="form-group">
+        <label for="telefono">Exist</label>
+        <input type="number" class="form-control" id="telefono" name="exist" placeholder="Enter the exist" [(ngModel)]="products.exist" >
+      </div>
+      <br>
+
+      <button type="submit" class="btn btn-primary btn-block" (click)="addProduct()">Enviar</button>
+    </form>
+  </div>
+</div>

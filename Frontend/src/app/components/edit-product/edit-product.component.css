@@ -1,0 +1,28 @@
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* Cambia align-items de 'center' a 'flex-start' */
+  height: 100vh; /* Ocupa toda la altura de la pantalla */
+  padding-top: 40px; /* Mueve el formulario un poco hacia abajo desde la parte superior */
+}
+
+.form-box {
+  width: 100%;
+  max-width: 400px; /* Limita el ancho máximo del formulario */
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+.form-control {
+  width: 100%; /* Los campos ocupan todo el ancho disponible dentro de .form-box */
+}
+
+.btn-block {
+  width: 100%;
+}
